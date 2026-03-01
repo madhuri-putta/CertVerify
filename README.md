@@ -25,26 +25,35 @@ It ensures academic certificates cannot be forged or modified.
 ---
 
 ## 🏗️ Project Structure
+
+```
 IDP/
 │
-├── backend/ # Backend API
-├── blockchain/ # Blockchain utilities
-├── ml/ # ML components (if applicable)
-├── models/ # Model files (if used)
-├── uploads/ # Uploaded certificates
+├── backend/                      # FastAPI backend application
 │
-├── backend_test.py # Backend endpoint testing
-├── check_blockchain_direct.py
-├── check_user_file_hash.py
-├── debug_store.py
-├── debug_verify.py
-├── issue_real_cert.py
-├── issue_user_file.py
-├── verify_issue.py
-├── verify_student_id.py
-├── users.json
-└── real_cert.png
-
+├── frontend/                     # Frontend interface (UI)
+│
+├── ml/                           # Machine learning components
+│
+├── models/                       # Saved ML models
+│
+├── uploads/                      # Uploaded certificate files
+│
+├── backend_test.py               # Backend API testing script
+├── check_blockchain_direct.py    # Direct blockchain verification script
+├── check_user_file_hash.py       # SHA-256 hash comparison utility
+├── debug_store.py                # Debug blockchain storage
+├── debug_verify.py               # Debug certificate verification
+├── issue_real_cert.py            # Issue sample certificate via API
+├── issue_user_file.py            # Issue user-uploaded certificate
+├── verify_issue.py               # Verify certificate issue status
+├── verify_student_id.py          # Student ID verification test
+│
+├── users.json                    # JSON-based user database
+├── real_cert.png                 # Sample certificate image
+│
+└── README.md                     # Project documentation
+```
 ---
 
 ## 🔧 Installation & Setup
